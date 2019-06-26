@@ -177,3 +177,11 @@ stamp-h[1-9]
 /libfwnt
 /libmapidb
 /libuna
+
+*.user
+*.suo
+*.tlog
+.vs/
+Release/
+Debug/
+VSDebug/

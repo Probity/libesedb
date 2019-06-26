@@ -25,3 +25,24 @@ For more information see:
 * Project documentation: https://github.com/libyal/libesedb/wiki/Home
 * How to build from source: https://github.com/libyal/libesedb/wiki/Building
 
+
+====
+
+# Building On Windows
+
+From Powershell run the following scripts:
+
+* synclibs.ps1
+* autogen.ps1
+
+This should pull down other libyal dependendencies and generate appropriate header files (common\Types.h, include\libpff.h, etc)
+
+From cmd run the following commands:
+
+* msbuild msvscpp\libesedb\libesedb.sln /p:Platform=x64;Configuration=Debug
+* msbuild msvscpp\libesedb\libesedb.sln /p:Platform=x64;Configuration=Release
+
+libesedb.lib & libesedb.dll is now available here
+
+* \msvscpp\libesedb\x64\Debug
+* \msvscpp\libesedb\x64\Release
